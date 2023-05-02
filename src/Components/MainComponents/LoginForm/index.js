@@ -82,7 +82,7 @@ const LoginForm = () => {
   };
 
   const googleAuth = () => {
-    window.open(`http://localhost:5000/api/auth/google/callback`, "_self");
+    window.open(`${process.env.REACT_APP_API_URL}/api/auth/google/callback`, "_self");
   };
 
   return (
