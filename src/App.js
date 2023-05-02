@@ -27,7 +27,7 @@ import {
 
 function App() {
   const BooleanData = useSelector((state) => state.booleanData);
-
+   //running
   //with nav
   const RoutesPages = () => {
     return (
