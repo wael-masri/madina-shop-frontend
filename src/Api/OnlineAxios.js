@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "https://backend-madina-shop.onrender.com/api";
+const baseUrl = `${process.env.REACT_APP_API_URL}/api`;
 const getToken = () => localStorage.getItem("tokenMadinaShopWeb");
 
 export const OnlineAxios = axios.create({
