@@ -40,12 +40,11 @@ import { useSelector } from 'react-redux';
 const CardApp = ({toggleWishlistItem,card,data}) => {
     const navigate = useNavigate();
     const userProfile = useSelector((state) => state.dataStatic.userLogin);
-    let BD = `${process.env.REACT_APP_API_URL}/`
   return (
     <Container>
         <Wrapper>
           <WrapperImage>
-            <ImageCover src={BD + data.imageCover} alt="imagecover" />
+            <ImageCover src={ data.imageCover} alt="imagecover" />
             {data.priceAfterDiscount > 0 ? (
               <ImageOffer src={offerImage} alt="imageOffer" />
             ) : null}
