@@ -88,7 +88,4 @@ ${tab({
 //height:350px;
 
 
-background-color: ${({theme}) => theme.GRAYCOLOR};
-
-
 `;

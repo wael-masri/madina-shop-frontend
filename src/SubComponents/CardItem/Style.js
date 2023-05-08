@@ -152,7 +152,6 @@ export const ImageCover = styled.img`
 export const Wrapper = styled.div`
   width: 100%;
   height: 100%;
-  background-color: ${({ theme }) => theme.FAKEGRAY};
   display: flex;
   flex-direction: ${(props) => (props.list === "list" ? "row" : "column")};
   max-width: ${(props) => (props.list === "list" ? "px" : "100%")};
@@ -195,6 +194,8 @@ export const WrapperImage = styled.div`
   width: ${(props) => (props.list === "list" ? "50" : "100")}%;
  // height: 270px;
   position: relative;
+  max-height: 280px;
+  
 `;
 export const DescriptionList = styled.div`
   width: 100%;
